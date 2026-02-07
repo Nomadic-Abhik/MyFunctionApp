@@ -27,7 +27,7 @@ public class  GetFunction
             ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
             : $"Hello Miss, {name}. This HTTP triggered function executed successfully.";
 
-        // Use await to satisfy the async method warning while returning the message
+        // Use await to satisfy the async method warning while returning the message.
         return new OkObjectResult(await Task.FromResult(responseMessage));
     }
 }
